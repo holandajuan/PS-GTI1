@@ -1,0 +1,609 @@
+* {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* TOPO SITE */
+header {
+    background: url(/img/fundo-inicio.jpg);
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.menu #menu-title{
+    color: #FBF2ED
+}
+
+.menu ul a {
+    font-size: small;
+    font-weight: 400;
+    text-transform: uppercase;
+    color:#012030;
+    padding-left: 15px;
+    text-decoration: none;
+}
+
+.menu ul a:hover {
+    color:#13678A;
+}
+
+.welcome {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10em;
+    
+}
+
+.welcome h1{
+    color: white;
+    font-style: italic;
+    font-weight: 200;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.welcome p {
+    color: white;
+    font-weight:bolder;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.welcome input[type="submit"] {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FED136;
+    color: black;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.welcome input[type="submit"]:hover {
+    background-color: orange;
+}
+
+/* SERVIÇOS */
+
+.servicos-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6em;
+}
+
+.servicos-title h2{
+    color: #212529;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:xx-large;
+}
+
+.servicos-title p{
+    font-size: 13px;
+    padding-top: 1em;
+    color: rgba(0, 0, 0, 0.666);
+    font-style: italic;
+}
+
+.servicos-tipos {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.servicos-tipos h2 {
+    padding-top: 8px;
+    color: #212529;
+    font-size: larger;
+}
+
+.servicos-tipos article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 10px;
+    width: 15em;
+    height: 15em;
+}
+
+.servicos-tipos p {
+    font-size: 13px;
+    padding-top: 15px;
+    color: rgba(0, 0, 0, 0.666);
+}
+
+.servicos-tipos img {
+    width: 100px;
+    height: 100px;
+}
+
+/* PORTIFÓLIO */
+
+.portifolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6em;
+    background-color: #F8F9FA;
+    padding-bottom: 5em;
+}
+
+.portifolio .portifolio-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7em;
+}
+
+.portifolio-title h2 {
+    font-size: xx-large;
+    text-transform: uppercase;
+    color: #212529;
+}
+
+.portifolio-title p {
+    padding-top: 1em;
+    color: rgba(0, 0, 0, 0.666);
+    font-size: 13px;
+    font-style: italic;
+}
+
+.artigos-portifolio {
+    display: flex;
+    width: 60vw;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin: 10px;
+}
+
+.artigos-portifolio article {
+    background-color: #fff;
+    padding-bottom: 40px;
+}
+
+.artigos-portifolio h3 {
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    color: #212529;
+    
+}
+
+.artigos-portifolio p {
+    display: flex;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.666);
+    font-weight: 600;
+    font-style: italic;
+    font-size: 13px;
+    padding-top: 3px;
+}
+
+.artigos-portifolio img {
+    height: 180px;
+    width: 250px;  
+}
+
+/*LINHA DO TEMPO*/
+
+.sobre-title {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4em;
+}
+
+.sobre-title h2 {
+    font-size: x-large;
+    text-transform: uppercase;
+    color: #212529;
+}
+
+.sobre-title p {
+    font-size: 13px;
+    padding-top: 1em;
+    color: rgba(0, 0, 0, 0.666);
+    font-size: 13px;
+    font-style: italic;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.pre-timeline {
+    background-color: #FFF; 
+}
+
+.timeline { 
+    padding: 0px 100px 90px 100px;
+    position: relative;
+    width: 100%;
+}
+
+.timeline ul li {
+    position: relative;
+    width: 50%;
+}
+
+#content h2 {
+    font-size: large;
+    color: #212529;
+}
+
+#content p {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.666);
+    font-weight: 500;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 3px;
+    background-color: #E9ECEF;
+    left: 50%;
+    top: 10%;
+}
+
+.timeline li:nth-child(odd) {
+    float: left;
+    text-align: right;
+    clear: both;
+    padding-left: 20%;
+}
+
+.timeline ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
+    padding-right: 20%;
+}
+
+.timeline ul li:nth-child(odd) #content {
+    margin-right: 100px;
+    padding-top: 15%;
+}
+
+.timeline ul li:nth-child(even) #content {
+    margin-left: 100px;
+    padding-top: 15%;
+}
+
+.timeline ul::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.timeline ul li:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50%;
+    right: -56px;
+    top: 65%;
+    transform: translate(0%, -50%);
+    border: 5px solid #E9ECEF;
+}
+
+.timeline ul li:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50%;
+    left: -52px;
+    top: 65%;
+    transform: translate(0%, -50%);
+    border: 5px solid #E9ECEF;
+}
+
+
+#content #final {
+    padding-bottom: 60%;
+}
+
+.timeline ul li:nth-child(1)::before {
+    background-image: url(/img/img-topico1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.timeline ul li:nth-child(2)::before {
+    background-image: url(/img/imh-topico2-transformed.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.timeline ul li:nth-child(3)::before {
+    background-image: url(/img/img-topico3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.timeline ul li:nth-child(4)::before {
+    background-image: url(/img/img-topico4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.timeline ul li:nth-child(5)::before {
+    background-image: url(/img/img-topicofinal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* EQUIPE */
+
+.equipe {
+    background-color: #F8F9FA;
+    padding-top: 8em;
+}
+
+.equipe-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.equipe-title h2 {
+    font-size: xx-large;
+    text-transform: uppercase;
+    color:#212529
+}
+
+.equipe-title p {
+    padding-top: 10px;
+    font-size: 13px;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.666); 
+}
+
+.equipe-membros {
+    padding-top: 7em;
+    display: flex;
+    justify-content:space-evenly
+    
+}
+
+.equipe-membro img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.equipe-membro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.equipe-membro h3 {
+    padding-top: 1.2em;
+}
+
+.equipe-membro p {
+    padding-top: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: gray;
+}
+
+
+.redes-sociais {
+    padding-top: 10px;
+    display: flex;
+    gap: 9px;
+}
+
+.equipe-membro #icon {
+    width: 40px;
+    height: 40px;
+}
+
+.equipe-btn-p {
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.equipe-btn-p button {
+    background-color: #FED136;
+    color: white;
+    width: 70px;
+    height: 30px;
+    font-size: medium;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer; 
+    transition:  background-color 0.3s;
+}
+
+.equipe-btn-p button:hover {
+    background-color: orange;
+}
+
+.equipe-btn-p p {
+    padding-top: 3em;
+    width: 50%;
+    text-align: center;
+    font-size: 13px;
+    color: gray;
+    padding-bottom: 7em;
+}
+
+/* CLIENTES-RODAPE */
+
+.clientes-rodape {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.clientes-rodape img {
+    width: 200px;
+    height: 100px;
+}
+
+/* FORMULARIO */
+
+.formulario {
+    background: url(/img/fundo-formulario.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    color: #E9ECEF;
+}
+
+#formulario-title {
+    padding-top: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#formulario-title h2 {
+    text-transform: uppercase;
+    
+}
+
+#formulario-title p {
+    font-size: 13px;
+    color:gray;
+}
+
+.container {
+    padding-top: 3em;
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+#container-dados form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#container-dados input,
+#container-mensagem textarea {
+    border: thin solid #999;
+    border-radius: 8px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#container-dados input{
+    width: 535px;
+    height: 50px;
+}
+
+#container-mensagem textarea {
+    width: 539px;
+    height: 211px;  
+    padding: 7px;
+}
+
+#btn-formulario {
+    padding-top: 15px;
+    position: relative;
+    text-align: center;
+}
+
+#btn-formulario button {
+    width: 215px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FED136;
+    color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btn-formulario button:hover {
+    background-color: orange;
+}
+
+/*RODAPE*/
+
+footer {
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p,
+#links-termos-rodape a{
+    font-size: 13px;
+}
+
+#icons-rodape{
+    display: flex;
+    gap: 10px;
+}
+
+#icons-rodape img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+#links-termos-rodape {
+    display: flex;
+    gap: 30px;
+}
+
+#links-termos-rodape a {
+    text-decoration: none;
+    outline: none;
+    color: #a19999;
+}
+
+
