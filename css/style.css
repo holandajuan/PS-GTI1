@@ -6,11 +6,7 @@
 }
 /* TOPO SITE */
 header {
-<<<<<<< HEAD
     background: url(../img/fundo-inicio.JPG);
-=======
-    background: url(../img/fundo-inicio.jpg);
->>>>>>> d20d0fe852fdf2c25976d077262fd3a75343c6bf
     height: 75vh;
     background-size: cover;
     background-position: center;
