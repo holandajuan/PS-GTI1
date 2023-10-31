@@ -6,7 +6,7 @@
 }
 /* TOPO SITE */
 header {
-    background: url(/img/fundo-inicio.jpg);
+    background: url(../img/fundo-inicio.JPG);
     height: 75vh;
     background-size: cover;
     background-position: center;
@@ -332,35 +332,35 @@ ul, ol {
 }
 
 .timeline ul li:nth-child(1)::before {
-    background-image: url(/img/img-topico1.webp);
+    background-image: url(../img/img-topico1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .timeline ul li:nth-child(2)::before {
-    background-image: url(/img/imh-topico2-transformed.jpg);
+    background-image: url(../img/imh-topico2-transformed.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .timeline ul li:nth-child(3)::before {
-    background-image: url(/img/img-topico3.jpg);
+    background-image: url(../img/img-topico3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .timeline ul li:nth-child(4)::before {
-    background-image: url(/img/img-topico4.jpg);
+    background-image: url(../img/img-topico4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .timeline ul li:nth-child(5)::before {
-    background-image: url(/img/img-topicofinal.png);
+    background-image: url(../img/img-topicofinal.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -485,7 +485,7 @@ ul, ol {
 /* FORMULARIO */
 
 .formulario {
-    background: url(/img/fundo-formulario.jpg);
+    background: url(../img/fundo-formulario.jpg);
     height: 80vh;
     background-size: cover;
     background-position: center;
