@@ -6,20 +6,23 @@
 }
 /* TOPO SITE */
 header {
-    background: url(../img/fundo-inicio.jpg);
+    background-image: url(../img/fundo-inicio.jpg);
     height: 75vh;
     background-size: cover;
     background-position: center;
 }
 
 .menu {
+    background-color: #55565a56;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 20px;
 }
 
 .menu #menu-title{
-    color: #FBF2ED
+    color: #FBF2ED;
+    
 }
 
 .menu ul a {
@@ -32,7 +35,23 @@ header {
 }
 
 .menu ul a:hover {
-    color:#13678A;
+    color:#FBF2ED;
+}
+@media (max-width: 415px) {
+    header {
+        height: 50vh;
+    }
+    .menu {
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .menu h1 {
+        font-size: 11px;
+    }
+    .menu ul a {
+        font-size: 7px;
+        padding-left: 3px;
+    }
 }
 
 .welcome {
@@ -78,6 +97,26 @@ header {
 
 .welcome input[type="submit"]:hover {
     background-color: orange;
+}
+@media (max-width: 415px) {
+    .welcome {
+        margin-top: 5em;
+        padding-top: 5em;
+    }
+    .welcome h1 {
+        padding-bottom: 5px;
+        font-size: 15px;
+    }
+    .welcome p {
+        font-size: 25px;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+    }
+    .welcome input[type="submit"] {
+        width: 115px;
+        height: 35px;
+        font-size: 11px;
+    }
 }
 
 /* SERVIÇOS */
@@ -136,6 +175,31 @@ header {
     width: 100px;
     height: 100px;
 }
+@media (max-width: 415px) {
+    .servicos-title  {
+        margin-top: 4em;
+    }
+    .servicos-title h2 {
+        font-size: x-large;
+    }
+    .servicos-title p {
+        font-size: 10px;
+    }
+    .servicos-tipos {
+        margin-top: 70px;
+    }
+    .servicos-tipos img {
+        width: 50px;
+        height: 50px;
+    }
+    .servicos-tipos h2 {
+        font-size: 15px;
+        text-align: center;
+    }
+    .servicos-tipos p {
+        font-size: 10px;
+    }
+}
 
 /* PORTIFÓLIO */
 
@@ -152,7 +216,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7em;
+    padding: 6em;
 }
 
 .portifolio-title h2 {
@@ -205,6 +269,21 @@ header {
     height: 180px;
     width: 250px;  
 }
+@media (max-width: 415px) {
+    .portifolio {
+        margin-top: 3em;
+        padding-bottom: 3em;
+    }
+    .portifolio .portifolio-title {
+        padding: 4em;
+    }
+    .portifolio-title h2 {
+        font-size: x-large;
+    }
+    .portifolio-title p {
+        font-size: 10px;
+    }
+}
 
 /*LINHA DO TEMPO*/
 
@@ -228,6 +307,16 @@ header {
     color: rgba(0, 0, 0, 0.666);
     font-size: 13px;
     font-style: italic;
+}
+@media (max-width: 415px) {
+
+    .sobre-title {
+        margin-top: 4em;
+        padding-bottom: 1.5em;
+    }
+    .sobre-title p {
+        font-size: 9px;
+    }
 }
 
 ul, ol {
@@ -267,7 +356,7 @@ ul, ol {
     width: 3px;
     background-color: #E9ECEF;
     left: 50%;
-    top: 10%;
+    top: 15%;
 }
 
 .timeline li:nth-child(odd) {
@@ -290,8 +379,9 @@ ul, ol {
 }
 
 .timeline ul li:nth-child(even) #content {
-    margin-left: 100px;
+    margin-right: 100px;
     padding-top: 15%;
+    padding-left: 100px;
 }
 
 .timeline ul::after {
@@ -365,6 +455,56 @@ ul, ol {
     background-size: cover;
     background-position: center;
 }
+@media (max-width: 415px) {
+    .timeline { 
+        padding: 0px 40px 45px 40px;
+        position: relative;
+    }
+    
+    #content h2 {
+        font-size: 9px;
+        color: #212529;
+        width: 99%;
+    }
+    
+    #content p {
+        font-size: 6%;
+        width: 100px;
+    }
+
+    .timeline li:nth-child(odd) {
+        padding-left: 0%;
+    }
+    
+    .timeline ul li:nth-child(odd) #content {
+        padding-top: 40%;
+        width: 130px;
+        padding-left: 30px;
+    }
+    
+    .timeline ul li:nth-child(even) #content {
+        padding-top: 40%;
+        width: 130px;
+        padding-left: 38px;
+    }
+    
+    .timeline ul li:nth-child(odd)::before {
+        height: 47px;
+        width: 47px;
+        right: -26px;
+        transform: translate(0%, -72%);
+        border: 3px solid #E9ECEF;
+    }
+    
+    .timeline ul li:nth-child(even)::before {
+        height: 47px;
+        width: 47px;
+        border-radius: 50%;
+        left: -26px;
+        transform: translate(0%, -79%);
+        border: 3px solid #E9ECEF;
+    }
+}
 
 /* EQUIPE */
 
@@ -396,7 +536,6 @@ ul, ol {
     padding-top: 7em;
     display: flex;
     justify-content:space-evenly
-    
 }
 
 .equipe-membro img {
@@ -435,6 +574,35 @@ ul, ol {
     width: 40px;
     height: 40px;
 }
+@media (max-width:415px) {
+    .equipe {
+        padding-top: 4em;
+        
+    }
+    .equipe-membros {
+        padding-top: 5em; 
+    }
+    .equipe-title h2 {
+        font-size: 18px;
+    }
+    .equipe-title p {
+        font-size: 10px;
+    }
+    .equipe-membro img {
+        width: 85px;
+        height: 85px;
+    }
+    .equipe-membro h3 {
+        font-size: 13px;
+    }
+    .equipe-membro p {
+        font-size: 10px;
+    }
+    .equipe-membro #icon {
+        width: 20px;
+        height: 20px;
+    }
+}
 
 .equipe-btn-p {
     padding-top: 4em;
@@ -467,6 +635,11 @@ ul, ol {
     color: gray;
     padding-bottom: 7em;
 }
+@media (max-width:415px) {
+    .equipe-btn-p p {
+        font-size: 10px;
+    }
+}
 
 /* CLIENTES-RODAPE */
 
@@ -480,6 +653,15 @@ ul, ol {
 .clientes-rodape img {
     width: 200px;
     height: 100px;
+}
+@media (max-width:415px) {
+    .clientes-rodape {
+        width: 100%;
+    }
+    .clientes-rodape img {
+        width: 80px;
+        height: 40px;
+    }
 }
 
 /* FORMULARIO */
@@ -499,15 +681,32 @@ ul, ol {
     align-items: center;
     gap: 10px;
 }
+@media (max-width:415px) {
+    .formulario {
+        width: 100%;
+        height: 60vh;
+        height: 50vh;
+    }
+    #formulario-title {
+        padding-top: 3em;
+    }
+}
 
 #formulario-title h2 {
     text-transform: uppercase;
-    
 }
 
 #formulario-title p {
     font-size: 13px;
     color:gray;
+}
+@media (max-width:415px) {
+    #formulario-title h2 {
+        font-size: 16px;
+    }
+    #formulario-title p {
+        font-size: 8px;
+    }
 }
 
 .container {
@@ -531,7 +730,20 @@ ul, ol {
     font-size: 16px;
     font-weight: 400;
 }
+@media (max-width:415px) {
 
+    .container {
+        gap: 1.5em;
+        justify-content: center;
+    }
+    #container-dados input,
+    #container-mensagem textarea {
+        font-size: 8px;
+    }
+    #container-dados form {
+        gap: 20px;
+    }
+}
 #container-dados input{
     width: 535px;
     height: 50px;
@@ -541,6 +753,16 @@ ul, ol {
     width: 539px;
     height: 211px;  
     padding: 7px;
+}
+@media (max-width:415px) {
+    #container-dados input {
+        width: 185px;
+        height: 35px;
+    }
+    #container-mensagem textarea {
+        width: 170px;
+        height: 146px;
+    }
 }
 
 #btn-formulario {
@@ -568,6 +790,13 @@ ul, ol {
 #btn-formulario button:hover {
     background-color: orange;
 }
+@media (max-width:415px) {
+    #btn-formulario button {
+        width: 115px;
+        height: 31px;
+        font-size: 9px;
+    }
+}
 
 /*RODAPE*/
 
@@ -593,8 +822,6 @@ footer p,
     height: 30px;
 }
 
-
-
 #links-termos-rodape {
     display: flex;
     gap: 30px;
@@ -604,6 +831,23 @@ footer p,
     text-decoration: none;
     outline: none;
     color: #a19999;
+}
+@media (max-width:415px) {
+    footer {
+        width: 87%;
+        gap: 15px;
+    }
+    footer p,
+    #links-termos-rodape a{
+    font-size: 9px;
+    }
+    #icons-rodape img{
+        width: 20px;
+        height: 20px;
+    }
+    #links-termos-rodape {
+        gap: 10px;
+    }
 }
 
 
