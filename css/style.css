@@ -416,9 +416,8 @@ ul, ol {
     border: 5px solid #E9ECEF;
 }
 
-
-#content #final {
-    padding-bottom: 60%;
+li#content-final {
+    padding-top: 200px;
 }
 
 .timeline ul li:nth-child(1)::before {
@@ -455,6 +454,12 @@ ul, ol {
     background-size: cover;
     background-position: center;
 }
+.timeline ul li:nth-child(5)::before {
+    background-image: url(../img/sobre-final.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 @media (max-width: 415px) {
     .timeline { 
         padding: 0px 40px 45px 40px;
@@ -462,13 +467,12 @@ ul, ol {
     }
     
     #content h2 {
-        font-size: 9px;
+        font-size: 11px;
         color: #212529;
-        width: 99%;
     }
     
     #content p {
-        font-size: 6%;
+        font-size: 7px;
         width: 100px;
     }
 
@@ -478,31 +482,33 @@ ul, ol {
     
     .timeline ul li:nth-child(odd) #content {
         padding-top: 40%;
-        width: 130px;
-        padding-left: 30px;
+        width: 100px;
     }
     
     .timeline ul li:nth-child(even) #content {
         padding-top: 40%;
-        width: 130px;
-        padding-left: 38px;
+        width: 135px;
+        padding-left: 55px;
     }
     
     .timeline ul li:nth-child(odd)::before {
-        height: 47px;
-        width: 47px;
-        right: -26px;
+        height: 70px;
+        width: 70px;
+        right: -39px;
         transform: translate(0%, -72%);
         border: 3px solid #E9ECEF;
     }
     
     .timeline ul li:nth-child(even)::before {
-        height: 47px;
-        width: 47px;
+        height: 70px;
+        width: 70px;
         border-radius: 50%;
-        left: -26px;
+        left: -37px;
         transform: translate(0%, -79%);
         border: 3px solid #E9ECEF;
+    }
+    li#content-final {
+        padding-top: 125px;
     }
 }
 
@@ -544,6 +550,15 @@ ul, ol {
     border-radius: 50%;
     background-position: center;
     background-size: cover;
+
+    @media (max-width:780px) {
+        width: 170px;
+        height: 170px;
+    }
+    @media (max-width: 600px) {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 .equipe-membro {
@@ -554,6 +569,10 @@ ul, ol {
 
 .equipe-membro h3 {
     padding-top: 1.2em;
+
+    @media (max-width: 600px) {
+        font-size: 15px;
+    }
 }
 
 .equipe-membro p {
@@ -573,6 +592,11 @@ ul, ol {
 .equipe-membro #icon {
     width: 40px;
     height: 40px;
+
+    @media (max-width:780px) {
+        width: 30px;
+        height: 30px;
+    }
 }
 @media (max-width:415px) {
     .equipe {
@@ -653,6 +677,23 @@ ul, ol {
 .clientes-rodape img {
     width: 200px;
     height: 100px;
+
+    @media (max-width:800px) {
+        width: 170px;
+        height: 90px;
+    }
+    @media (max-width:686px) {
+        width: 150px;
+        height: 80px;
+    }
+    @media (max-width: 600px) {
+        width: 130px;
+        height: 60px;
+    }
+    @media (max-width:525px) {
+        width: 100px;
+        height: 50px;
+    }
 }
 @media (max-width:415px) {
     .clientes-rodape {
@@ -672,6 +713,10 @@ ul, ol {
     background-size: cover;
     background-position: center;
     color: #E9ECEF;
+
+    @media (max-width:790px) {
+        height: 70vh;
+    }
 }
 
 #formulario-title {
@@ -747,12 +792,61 @@ ul, ol {
 #container-dados input{
     width: 535px;
     height: 50px;
+
+    @media (max-width:1130px){
+        width: 460px;
+        height: 45px;
+    }
+    @media (max-width:976px){
+        font-size: 11px;
+        width: 380px;
+        height: 40px;
+    }
+    @media (max-width:830px) {
+        width: 340px;
+    }
+    @media (max-width: 740px) {
+        width: 300px;
+    }
+    @media (max-width: 710px) {
+        width: 250px;
+    }
+    @media (max-width: 600px) {
+        width: 200px;
+    }
+    @media (max-width: 480px) {
+        width: 170px;
+    }
 }
 
 #container-mensagem textarea {
     width: 539px;
     height: 211px;  
     padding: 7px;
+
+    @media (max-width: 1130px) {
+        width: 460px;
+        height: 205px;
+    }
+    @media (max-width: 976px) {
+        font-size: 11px;
+        width: 380px;
+        height: 195px;
+    }
+    @media (max-width:830px) {
+        width: 340px;
+        height: 190px;     
+    }
+    @media (max-width:710px) {
+        width: 280px;
+    }
+    @media (max-width: 600px) {
+        width: 210px;
+    }
+    @media (max-width: 480px) {
+        width: 170px;
+        height: 180px;
+    }
 }
 @media (max-width:415px) {
     #container-dados input {
@@ -785,6 +879,11 @@ ul, ol {
     margin-top: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
+
+    @media (max-width: 800px) {
+        width: 185px;
+        height: 45px;
+    }
 }
 
 #btn-formulario button:hover {
@@ -807,9 +906,31 @@ footer {
     align-items: center;
 }
 
-footer p,
+#copyright p {
+    font-size: 14px;
+    padding-right: 5px;
+
+    @media (max-width:800px) {
+        font-size: 10px;
+    }
+    @media (max-width:560px) {
+        text-align: justify;
+        font-size: 8px;
+    }
+}
+
 #links-termos-rodape a{
     font-size: 13px;
+    width: fit-content;
+
+    @media (max-width:800px) {
+        font-size: 10px;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 9px;
+    }
+    
 }
 
 #icons-rodape{
@@ -820,11 +941,20 @@ footer p,
 #icons-rodape img{
     width: 30px;
     height: 30px;
+
+    @media (max-width: 800px) {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 #links-termos-rodape {
     display: flex;
     gap: 30px;
+
+    @media (max-width: 700px) {
+        gap: 10px;
+    }
 }
 
 #links-termos-rodape a {
@@ -834,12 +964,14 @@ footer p,
 }
 @media (max-width:415px) {
     footer {
-        width: 87%;
         gap: 15px;
     }
     footer p,
     #links-termos-rodape a{
-    font-size: 9px;
+        font-size: 9px;
+    }
+    footer p {
+        padding-left: 15px;
     }
     #icons-rodape img{
         width: 20px;
@@ -849,5 +981,3 @@ footer p,
         gap: 10px;
     }
 }
-
-
