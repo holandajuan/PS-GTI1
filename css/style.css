@@ -331,6 +331,16 @@ ul, ol {
     padding: 0px 100px 90px 100px;
     position: relative;
     width: 100%;
+
+    @media (max-width:850px) {
+        padding: 0px 60px 90px 60px;
+    }
+    @media (max-width:650px) {
+        padding: 0px 40px 90px 40px;
+    }
+    @media (max-width:530px) {
+        padding: 0px 20px 90px 20px;
+    }
 }
 
 .timeline ul li {
@@ -341,12 +351,23 @@ ul, ol {
 #content h2 {
     font-size: large;
     color: #212529;
+
+    @media (max-width:456px){
+        font-size: 13px;
+    }
 }
 
 #content p {
     font-size: 13px;
     color: rgba(0, 0, 0, 0.666);
     font-weight: 500;
+
+    @media (max-width: 650px) {
+        font-size: 11px;
+    }
+    @media (max-width:456px){
+        font-size: 9px;
+    }
 }
 
 .timeline::before {
@@ -358,12 +379,32 @@ ul, ol {
     left: 50%;
     top: 15%;
 }
+@media (max-width:530px) {
+    .timeline::before {
+        top: 11%;
+    }
+}
+@media (max-width:405px) {
+    .timeline::before {
+        top: 13%;
+    }
+}
 
 .timeline li:nth-child(odd) {
     float: left;
     text-align: right;
     clear: both;
     padding-left: 20%;
+
+    @media (max-width:1000px) {
+        padding-left: 3%;
+    }
+    @media (max-width: 1450px) {
+        padding-left: 3%;
+    }
+    @media (max-width:456px){
+        padding-left: 0;
+    }
 }
 
 .timeline ul li:nth-child(even) {
@@ -371,17 +412,42 @@ ul, ol {
     text-align: left;
     clear: both;
     padding-right: 20%;
+
+    @media (max-width:1000px) {
+        padding-right: 3%;
+    }
+    @media (max-width:1450px) {
+        padding-right: 3%;
+    }
+    @media (max-width:456px){
+        padding-right: 0;
+    }
 }
 
 .timeline ul li:nth-child(odd) #content {
     margin-right: 100px;
     padding-top: 15%;
+
+    @media (max-width:531px){
+        margin-right: 72px;
+    }
 }
+
 
 .timeline ul li:nth-child(even) #content {
     margin-right: 100px;
     padding-top: 15%;
     padding-left: 100px;
+
+    @media (max-width:1000px) {
+        margin-right: 0;
+    }
+    @media (max-width:1450px) {
+        padding-top: 10%;
+    }
+    @media (max-width:650px) {
+        padding-left: 75px;
+    }
 }
 
 .timeline ul::after {
@@ -415,6 +481,22 @@ ul, ol {
     transform: translate(0%, -50%);
     border: 5px solid #E9ECEF;
 }
+@media (max-width: 530px) {
+    .timeline ul li:nth-child(odd)::before,
+    .timeline ul li:nth-child(even)::before {
+        height: 80px;
+        width: 80px;
+        border: 3px solid #E9ECEF;
+    }
+    .timeline ul li:nth-child(odd)::before {
+        transform: translate(0%, -100%);
+        right: -44px;
+    }
+    .timeline ul li:nth-child(even)::before {
+        left: -41px;
+        transform: translate(0%, -90%);
+    }
+}
 
 li#content-final {
     padding-top: 200px;
@@ -447,19 +529,19 @@ li#content-final {
     background-size: cover;
     background-position: center;
 }
-
-.timeline ul li:nth-child(5)::before {
-    background-image: url(../img/img-topicofinal.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+@media (max-width:850px) {
+    .timeline ul li:nth-child(4)::before {
+        transform: translate(0%, -100px);
+    }
 }
+
 .timeline ul li:nth-child(5)::before {
     background-image: url(../img/sobre-final.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 @media (max-width: 415px) {
     .timeline { 
         padding: 0px 40px 45px 40px;
