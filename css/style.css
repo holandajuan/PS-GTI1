@@ -13,7 +13,7 @@ header {
 }
 
 .menu {
-    background-color: #55565a56;
+    background-color: #55565a98;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -21,13 +21,13 @@ header {
 }
 
 .menu #menu-title{
-    color: #FBF2ED;
+    color: #DAFDBA;
     
 }
 
 .menu ul a {
     font-size: small;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     color:#012030;
     padding-left: 15px;
@@ -64,7 +64,7 @@ header {
 }
 
 .welcome h1{
-    color: white;
+    color: #012030;
     font-style: italic;
     font-weight: 200;
     font-weight: bold;
@@ -72,7 +72,7 @@ header {
 }
 
 .welcome p {
-    color: white;
+    color: #012030;
     font-weight:bolder;
     font-size: 3.5em;
     text-transform: uppercase;
@@ -84,7 +84,7 @@ header {
     height: 50px;
     border: none;
     border-radius: 10px;
-    background-color: #FED136;
+    background-color: #012030;
     color: black;
     font-size: 17px;
     text-transform: uppercase;
@@ -96,7 +96,7 @@ header {
 }
 
 .welcome input[type="submit"]:hover {
-    background-color: orange;
+    background-color: #13678A;
 }
 @media (max-width: 415px) {
     .welcome {
@@ -208,7 +208,7 @@ header {
     flex-direction: column;
     align-items: center;
     margin-top: 6em;
-    background-color: #F8F9FA;
+    background-color: #DAFDBA;
     padding-bottom: 5em;
 }
 
@@ -597,7 +597,7 @@ li#content-final {
 /* EQUIPE */
 
 .equipe {
-    background-color: #F8F9FA;
+    background-color: #012030;
     padding-top: 8em;
 }
 
@@ -610,14 +610,14 @@ li#content-final {
 .equipe-title h2 {
     font-size: xx-large;
     text-transform: uppercase;
-    color:#212529
+    color:#fff;
 }
 
 .equipe-title p {
     padding-top: 10px;
     font-size: 13px;
     font-style: italic;
-    color: rgba(0, 0, 0, 0.666); 
+    color: rgba(183, 182, 182, 0.666); 
 }
 
 .equipe-membros {
@@ -651,6 +651,7 @@ li#content-final {
 
 .equipe-membro h3 {
     padding-top: 1.2em;
+    color: #fff;
 
     @media (max-width: 600px) {
         font-size: 15px;
@@ -674,6 +675,8 @@ li#content-final {
 .equipe-membro #icon {
     width: 40px;
     height: 40px;
+    background-color: #fff;
+    border: none;
 
     @media (max-width:780px) {
         width: 30px;
@@ -986,11 +989,13 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background: #012030;
 }
 
 #copyright p {
     font-size: 14px;
     padding-right: 5px;
+    color: #fff;
 
     @media (max-width:800px) {
         font-size: 10px;
@@ -1023,6 +1028,8 @@ footer {
 #icons-rodape img{
     width: 30px;
     height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
 
     @media (max-width: 800px) {
         width: 20px;
